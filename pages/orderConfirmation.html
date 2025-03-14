@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- NORMALIZE -->
+    <link rel="stylesheet" href="../css/normalize.css">
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- ALERT SCRIPT -->
+    <script src="../js/alert.js" defer></script>
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- GOOGLE TRANSLATE -->
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer></script>
+    <script src="../js/translate.js" defer></script>
+    
+    <!-- ICON WEB -->
+    <link rel="shortcut icon" href="../images/logo.png" />
+
+    <title>Confirmacion Datos</title>
+</head>
+<body>
+    <div class="container-order-confirmation">
+        <img src="../images/logo.png" alt="Logo">
+        <h2>¡Give Us Your Shipping Information!</h2>
+        <form>
+            <input type="text" name="nombre" placeholder="Name" class="nameInput" required>
+            <input type="number" name="telefono" maxlength="10" placeholder="Tel" class="telInput" required>
+            <input type="text" name="direccion" placeholder="Address" class="addressInput" required>
+            <textarea name="mensaje" placeholder="Additional Message"></textarea>
+            <button id="orderConfirmationButton" type="submit" data-bs-toggle="modal" data-bs-target="#alertForm">Send</button>
+        </form>
+    </div>
+
+    <!-- Alert js -->
+    <div id="alertForm" class="modal" tabindex="-1" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">¡ORDER CONFIRMED!</h4>
+                </div>
+                <div class="modal-body ">
+                    <p class="fw-bolder fs-3 text-center p-5 text-dark">¡Your order will arrive soon!</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="../index.html"><button type="button" class="btn">UNDERSTOOD</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Translate button -->
+    <button id="google_translate_element">Translate</button>
+
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>

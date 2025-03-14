@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- NORMALIZE -->
+    <link rel="stylesheet" href="../css/normalize.css">
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="../css/styles.css">
+    
+    <!-- GOOGLE TRANSLATE -->
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer></script>
+    <script src="../js/translate.js" defer></script>
+
+    <!-- SCRIPT JS -->
+    <script src="../js/script.js" type="module" defer></script>
+    
+    <!-- ICONS BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- ICON WEB -->
+    <link rel="shortcut icon" href="../images/logo.png"/>
+        
+    <title>TASTYDASH</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container">
+                <img src="../images/logo.png" alt="foodies" class="img-fluid logo">
+    
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse text-center" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+    
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#about">About Us</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#foods">Explore Foods</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#reviews">Reviews</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#faq">FAQ</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <button class="main-btn p-2">+57 312-286-40-42</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+          </nav>
+          </div>
+    </header>
+
+    <!-- BANNER TOP -->
+    <section id="orderNowTopBanner">
+        <div class="container-fluid px-0 top-banner-order">
+                <div class="row align-items-center">
+                    <div class="col-12 col-xl-3 order-text-container">
+                        <h1 class="mb-5 mb-lg-3">DISCOVER NEW TASTES</h1>
+                        <p class="text-left">Unique and different flavors with our delicious meals</p>
+                    </div>
+                    <div class="col-12 col-xl-9 float-end mx-auto img-container">
+                        <video autoplay muted loop>
+                            <source class="object-fit-cover" src="../images/img/vid/order-now-food.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container-fluid d-none d-xl-flex justify-content-around align-items-center" id="orderNowBottomBanner">
+        <p><span>PASSION INTENSITY SWEETNESS</span><img width="90" height="90" src="https://img.icons8.com/sf-black-filled/64/cutlery.png" alt="cutlery"/></p>
+        <p><span>PASSION INTENSITY SWEETNESS</span><img width="90" height="90" src="https://img.icons8.com/sf-black-filled/64/cutlery.png" alt="cutlery"/></p>
+        <p>PASSION INTENSITY SWEETNESS</p>    
+    </div>
+
+
+    <!-- Cards container -->
+    <section id="productsContainer">
+        <!-- Search input -->
+        <div class="form-floating mb-3 mt-5 container w-75 w-md-50 w-lg-25 " id="search">
+            <input type="text" class="form-control" id="foodSearch" placeholder="FIND YOUR DREAM FOOD">
+            <label for="floatingInput">FIND YOUR DREAM FOOD</label>
+        </div>
+
+        <!-- Basket icon -->
+        <div id="basket-container" class="container-fluid text-center">
+           <button type="button" class="btn position-relative" data-bs-toggle="modal" data-bs-target="#modalCartFood">
+                <a class="text-black" href="#"><i class="bi bi-basket2-fill"></i></a>
+                <span id="quantityProducts" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    <!-- COUNTER PRODUCTS JAVASCRIPT ADD -->
+                    <span class="visually-hidden">products quantity</span>
+                </span>
+          </button>
+        </div>
+
+        <!-- cards -->
+        <div class="container cards-container">
+            <div class="row">
+                <!-- JAVASCRIPT CARDS ADDING -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal food additional info -->
+    <div class="modal fade" id="modalFoodInfo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <!-- JAVASCRIPT INFO FOOD ADDING -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shopping cart modal -->
+    <div class="modal fade" id="modalCartFood" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body modal-carrito d-block">
+
+                    <!-- Titulo principal para pantallas pequeñas -->
+                    <h1 class="tituloPricipalCarritoScreenSmall text-center mt-4 d-block">Your Cart</h1>
+
+                    <div>
+                        <!-- Contenedor de tarjetas -->
+                        <div class="container cards-container">
+                            <div class="row p-0">
+                                <div class="container d-flex flex-wrap justify-content-center align-items-center col-lg-8  cartProducts">
+                                    <!-- JAVASCRIPT PRODUCTS CART ADDING -->
+                                </div>
+                                
+
+                                <!-- Contenedor del checkout de pago -->
+                                <div class="col-lg-4">
+                                    <!-- Boton Clear --> 
+                                    <button class="btn btn-primary border-0 rounded-3 text-center mt-2 w-100 cleanCart">CLEAN ALL<i class="bi bi-trash"></i></button>
+
+                                    <div class="card card-final-price  w-100 rounded-4 mt-2" style="width: 17rem;">
+                                        <div class="card-body">
+
+                                            <h5 class="card-title mb-2">Order Summary</h5>
+                                            <hr class="mt-2">
+                                            <h6 class="card-subtitle mb-4 text-body-dark mt-4">Subtotal
+                                            <span id="subtotal-price" class="mb-3 float-end "> </span>
+                                            </h6>
+                                            <h6 class="card-subtitle mb-2 text-body-dark">Shipping 
+                                            <span class="mb-3 float-end">Free</span>
+                                            </h6>
+                                            <hr>
+                                            <h6 class="card-subtitle mb-1 text-body-dark">Total 
+                                            <span id="total-price" class="mb-3 float-end"> </span>
+                                            </h6>
+                                        </div>
+                                    </div>
+
+                                    <!-- Boton checkout --> 
+                                    <a id="checkoutButton" href="orderConfirmation.html" target="_blank"><button class="btn btn-primary border-0 rounded-3 text-center mt-2 w-100">CHECKOUT</button></a>
+
+                                    <!-- Logo principal en checkout -->
+                                    <div class="cart-icon-container d-none d-lg-flex"> 
+                                        <img class="img-fluid" src="../images/logo.png" alt="tastydash">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Up arrow -->
+    <a href="#" class="scroll-top"><i class="bi bi-arrow-bar-up"></i></a>
+
+    <!-- Translate button -->
+    <button id="google_translate_element">Translate</button>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container text-center p-4">
+            <p class="mt-2"> &copy;All rights reserved 2024</p>
+        </div>
+    </footer>
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>

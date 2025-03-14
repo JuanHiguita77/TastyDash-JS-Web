@@ -1,0 +1,1764 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap');
+
+:root
+{
+    --primary-color: #A82c48;
+    --secondary-color: #43121d;
+    --third-color: #f98169;
+    --white-color: #fff;
+    --text-color: #999;
+    --black-color: #000;
+    --primary-font: 'Roboto', sans-serif;
+    --secondary-font:'Quicksand', sans-serif;
+    --background-color: #e6e6e6;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    font-family: var(--primary-font);
+    font-size: 100%;
+    font-weight: 400;
+}
+
+/*ANIMATION SCROLL IMAGES*/
+@keyframes show {
+	from {
+		opacity: 0;
+		scale: 25%;
+	}
+
+	to {
+		opacity: 1;
+		scale: 100%;
+	}
+}
+
+img {
+	view-timeline-name: --image;
+	view-timeline-axis: block;
+
+	animation-timeline: --image;
+	animation-name: show;
+
+	animation-range: entry 25% cover 30%;
+	animation-fill-mode: both;
+}
+/*ANIMATION SCROLL IMAGES*/
+
+
+/*HEADER*/
+.main-btn
+{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    font-family: var(--primary-font);
+    font-weight: 600;
+    transition: 0.6s;
+}
+
+.main-btn:hover
+{
+    color: var(--primary-color);
+    background-color: var(--white-color);
+}
+
+.nav-link
+{
+    color: var(--primary-color) !important;
+    font-family: var(--primary-font);
+    font-weight: 700 !important;
+}
+
+header .navbar
+{
+    box-shadow: 4px 6px 12px 0px rgba(0, 0, 0, 0.4);
+}
+
+header .navbar .logo
+{
+    max-width: 130px;
+}
+
+/*HEADER*/
+
+
+/*Scrollbar*/
+::-webkit-scrollbar
+{
+    width: 0.625rem;
+}
+
+::-webkit-scrollbar-track
+{
+    background-color: var(--white-color);
+}
+
+::-webkit-scrollbar-thumb
+{
+    background-color: var(--primary-color);
+}
+/*Scrollbar*/
+
+
+/*TITULOS*/
+h1
+{
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 3rem;
+    color: var(--secondary-color);
+}
+
+h2
+{
+    font-weight: 700;
+    font-size: 2.25rem;
+    text-transform: capitalize;
+    font-family: var(--secondary-font);
+    color: var(--secondary-color);
+    line-height: 3rem;
+}
+
+h4
+{
+    color: var(--secondary-color);
+    font-family: var(--secondary-color);
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+h5
+{
+    color: var(--primary-color);
+    text-transform: capitalize;
+    font-family: var(--secondary-font);
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+p
+{
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: 1px;
+}
+
+/*Wrapper*/
+.wrapper
+{
+    padding-top: 8.25rem;
+    padding-bottom: 8.25rem;
+}
+
+.text-content
+{
+    width: 70%;
+    margin: auto;
+}
+
+.counter-section h2,
+.testimonial-section h2,
+.book-food-text h2
+{
+    color: var(--white-color);
+}
+
+
+/*BANNER TOP*/
+.white-btn
+{
+    color: var(--black-color);
+    background-color: var(--white-color);
+    border: 2px solid var(--white-color);
+    font-family: var(--primary-font);
+    font-weight: 600;
+    transition: 0.6s;
+    box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.2);
+}
+
+.white-btn:hover
+{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+
+#home h1
+{
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+.top-banner
+{
+    width: 100%;
+    background: url('../images/bg/bg-1.jpg') no-repeat center;
+    background-size: cover;
+    padding: 28.875rem 0 9.375rem;
+
+}
+
+/*SLOGAN POSITION BANNER*/
+.top-banner .container .row
+{
+    position: relative;
+    top: -97px;
+}
+
+/*COUNTER SECTION*/
+.counter-section
+{
+    background-color: var(--primary-color);
+    padding: 2.5rem 0;
+}
+
+.counter-section p
+{
+    color: var(--white-color);
+}
+
+.counter-section div h2
+{
+    font-family: var(--primary-font);
+    font-weight: 700;
+}
+/*COUNTER SECTION*/
+
+
+.about-section div h2
+{
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.list-group i
+{
+    color: var(--primary-color);
+    font-size: 1.7rem;
+}
+
+/*STORY SECTION*/
+#story .story-section
+{
+    width: 100%;
+    height: 32.125rem;
+    background: url('../images/bg/bg-2.jpg') no-repeat center/cover;
+    padding-top: 100px;
+}
+
+#story .story-section h2
+{
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+}
+
+#story .story-section p
+{
+    color: var(--text-color);
+    font-size: 1.1rem;
+}
+/*STORY SECTION*/
+
+
+/*FOOD SECTION*/
+#foods .food-section h2
+{
+    color: var(--secondary-color);
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+#foods .food-section p
+{
+    color: var(--text-color);
+}
+
+#foods .cards span
+{
+    color: var(--primary-color);
+    font-family: var(--secondary-font);
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+/*FOOD SECTION*/
+
+/*REVIEWS SECTION*/
+#reviews .testimonial-section
+{
+    background-color: var(--primary-color);
+}
+
+#reviews .testimonial-section h2
+{
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+#reviews .carousel-item img
+{
+    max-width: 7rem;
+    border-radius: 50%;
+    padding: 0.3125rem; 
+}
+
+#reviews .carousel-item
+{
+    background-color: var(--white-color);
+    border-radius: 15px;
+    margin-top: 3rem;
+    padding: 6rem 3.125rem;
+}
+
+#reviews .carousel-item p
+{
+    font-family: var(--secondary-font);
+    font-size: 1.325rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+#reviews .carousel-item span
+{
+    color: var(--primary-color);
+    font-size: 1.325rem;
+    font-weight: 600;
+}
+
+#reviews .carousel-indicators button
+{
+    width: 15px;
+    height: 15px;
+    outline: none;
+    border-radius: 50%;
+    border: none;
+    margin-left: 1rem;
+    opacity: 0.2;
+}
+
+#reviews .carousel-indicators button.active
+{
+    opacity: 1;
+}
+
+#reviews .carousel-indicators
+{
+    bottom:-2.8125rem;
+}
+
+
+/*REVIEWS SECTION*/
+
+
+/* FAQ SECTION*/
+#faq h2
+{
+    font-size: 2.5rem;   
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+#faq span
+{
+    color: var(--primary-color);
+}
+/* FAQ SECTION*/
+
+
+/*BOOK FOOD*/
+.book-food
+{
+    background: url('../images/bg/bg-3.jpg') no-repeat center/cover;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: 0 71.9125px;
+    padding: 4.375rem 0;
+}
+
+/*BOOK FOOD*/
+
+/*newsLetter*/
+#newslettar h2
+{
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+#newslettar .form-control
+{
+    height: 60px;
+    border: 2px solid var(--primary-color);
+}
+
+#newslettar .form-control:focus:hover,
+#newslettar .form-control:focus
+{
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+
+/*Footer*/
+#footer
+{
+    background-color: var(--secondary-color);
+}
+
+#footer p
+{
+    color: var(--white-color);
+}
+
+
+
+/*ORDER NOW PAGE STYLES*/
+
+/*BANNER TOP*/
+#orderNowTopBanner 
+{   
+    max-height: 100vh;
+    background: var(--secondary-color);
+    color: var(--white-color);
+    overflow: hidden;
+}
+
+#orderNowTopBanner .top-banner-order
+{
+    width: 100%;
+    padding: 28.875rem 0 0;
+}
+
+#orderNowTopBanner .top-banner-order .row
+{
+    margin: 0;
+}
+
+#orderNowTopBanner .top-banner-order
+{
+    position: relative;
+    top: -255px;
+}
+
+#orderNowTopBanner .top-banner-order .order-text-container
+{
+    position: relative;
+    top: 94px;
+    z-index: 3;
+}
+
+#orderNowTopBanner .top-banner-order .order-text-container h1
+{
+    font-size: 3.5rem;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    text-align: center;
+}
+
+#orderNowTopBanner .top-banner-order .order-text-container p
+{
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: var(--secondary-font);
+    color: var(--white-color);
+    text-align: center;
+}
+
+#orderNowTopBanner .img-container 
+{
+    position: relative;
+    top: -445px;
+    max-width: 1200px;
+    height: auto;
+    overflow: hidden;
+    padding: 0px;
+    box-shadow: 0 0 18px rgb(220, 220, 220);
+    filter: brightness(60%);
+}
+
+#orderNowTopBanner .img-container img
+{
+    width: 100%;
+    height: 1290px;
+    position: relative;
+    top: -292px;
+
+}
+/*BANNER TOP*/
+
+/*BANNER ICONS BOTTOM*/
+#orderNowBottomBanner
+{
+    height: 100px;
+    background-color: var(--background-color);
+}
+
+#orderNowBottomBanner p
+{
+    color: var(--black-color);
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: lighter;
+}
+
+#orderNowBottomBanner p img
+{
+    position: relative;
+    left: 120px;
+}
+/*BANNER ICONS BOTTOM*/
+
+/*PRODUCTS CONTAINER*/
+#productsContainer #search input
+{
+    border: 1px solid var(--black-color);
+    background: var(--background-color);
+    outline: none;
+}
+
+
+#productsContainer input:focus{
+
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px var(--secondary-color);
+    outline: 0 none;
+}
+
+#productsContainer label
+{
+    margin: 0 auto;
+    font-weight: lighter;
+    color: var(--black-color);
+}
+/*PRODUCTS CONTAINER*/
+
+/*BASKET ICON*/
+#basket-container
+{
+    margin-top: 25px;
+}
+
+#basket-container button
+{
+    border: 1px solid var(--black-color);
+}
+
+#basket-container i
+{
+    font-size: 2.8rem;
+}
+
+/*ICON BASKET ANIMATION*/
+@keyframes saltar
+{
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+}
+
+#basket-container button i::before
+{
+    animation: saltar 2.5s infinite;
+}
+/*BASKET ICON*/
+
+/*LINK CHECKOUT*/
+#modalCartFood .cards-container #checkoutButton
+{
+    text-decoration: none;
+}
+/*LINK CHECKOUT*/
+
+/*ARROW TOP SCROLL*/
+.scroll-top 
+{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    z-index: 9999;
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.scroll-top:hover 
+{
+    opacity: 1;
+}
+/*ARROW TOP SCROLL*/
+
+
+/*PRODUCTS CARDS*/
+#productsContainer .card
+{
+
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+
+}
+
+#productsContainer .card .addCart
+{   
+    font-family: var(--secondary-font);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 74%;
+    height: auto;
+    margin: 0 auto;
+    outline: none;
+    border: 1px solid var(--black-color);
+    background-color: var(--black-color);
+    transition: 0.2s all ease-in-out;
+}
+
+#productsContainer .card .addCart:hover
+{
+    background: var(--primary-color);
+}
+
+#productsContainer .card .priceCard
+{
+    color: var(--primary-color);
+}
+
+#productsContainer .cards-container .card img
+{
+    box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+/*PRODUCTS CARDS*/
+
+
+/*================= Estilos Modal carrito =================*/
+
+/*Animacion del modal*/
+.modal-animation-open 
+{
+
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { transform: scale(0.3);}
+    to {transform: scale(1);}
+}
+/*Animacion del modal*/
+
+/* Sombreado de las imagenes*/
+#modalCarrito .cards-container .card img
+{
+    /*box-shadow: 0 0 0 var(--black-color);*/
+    box-shadow: 0px 0px 8px 0px  rgba(102, 102, 102, 0.795);
+}     
+/* Sombreado de las imagenes*/
+
+/* Tamaño del texto en el precio en las tarjetas*/
+#modalCarrito .cards-container .card .card-price 
+{
+    float: right;
+    font-size: 1rem;
+}
+/* Tamaño del texto en el precio en las tarjetas*/
+
+/*Tamaño de texto de los h6 del contenedor de checkout*/
+#modalCarrito .cards-container .card .total-title 
+{
+    font-size: 1.1rem;
+} 
+/*Tamaño de texto de los h6 del contenedor de checkout*/
+
+/*Tamaño de texto de los span de los h6 del contenedor de checkout*/
+#modalCarrito .cards-container .card .total-title span 
+{
+    float: right;
+    font-size: 1rem;
+}    
+/*Tamaño de texto de los span de los h6 del contenedor de checkout*/
+
+/* Para que la informacion siempre quede al lado derecho de la pantalla en el contenedor de checkout*/
+#modalCarrito .cards-container .card-final-price .card-subtitle span 
+{
+    float: right;
+}  
+/* Para que la informacion siempre quede al lado derecho de la pantalla en el contenedor de checkout*/
+
+/* Estilos de selector de cantidad */
+#modalCarrito .cards-container .card .select-quantity 
+{
+    width: 55px;
+    cursor: pointer;
+    outline-color: #A82C48;
+}
+/* Estilos de selector de cantidad */
+
+/*====================== Modal Informacion =====================*/
+
+/* Sombriado de las imagenes */
+#modalInfo .modal-body .card-body img 
+{
+    box-shadow: 0px 0px 8px 0px  rgba(94, 94, 94, 0.795); 
+}
+/* Sombriado de las imagenes */
+
+/* Tamaño de los h3 en pantallas pequeñas */
+#modalInfo .modal-body .card-body h3 
+{
+    font-size: 1.3rem;
+}
+/* Tamaño de los h3 en pantallas pequeñas */
+
+/*Boton abrir modal */
+#btnAbrirModalInfo 
+{
+
+    margin-top: 50px;
+    margin-left: 50px;
+    background-color: #A82C48;
+}
+/*Boton abrir modal */
+
+/*Button clear cart*/
+#modalCartFood .cards-container .cleanCart
+{
+    background-color: var(--secondary-color);
+}
+
+/*CHECKOUT BUTTON*/
+#modalCartFood .cards-container #checkoutButton button
+{
+    background-color: var(--primary-color);
+}
+/*ORDER NOW PAGE STYLES*/
+
+
+
+/*INGREDIENTS PAGE DESING*/
+
+/*BANNER TOP*/
+#banner-image-top
+{
+    height: 100vh;
+    overflow: hidden;
+}
+
+#banner-image-top img
+{
+    width: 100%;
+    height: 100vh;
+}
+
+#banner-image-top .banner-text-ingredients-container
+{
+    position: relative;
+    top: -330px;
+    font-family: var(--secondary-font);
+}
+
+#banner-image-top .banner-text-ingredients-container h2
+{
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+
+#banner-image-top .banner-text-ingredients-container p
+{
+    color: var(--white-color);
+    font-size: 1.1rem;
+}
+/*BANNER TOP*/
+
+/*CONTENT DESING*/
+#ingredients-container-section .ingredients-content .container-first-img,
+#ingredients-container-section .ingredients-content .container-second-img,
+#ingredients-container-section .ingredients-content .container-third-img,
+#ingredients-container-section .ingredients-content .container-four-img,
+#ingredients-container-section .ingredients-content .container-five-img
+{   
+    font-family: var(--secondary-font);
+    height: 82vh;
+    margin-bottom: 20px;
+}
+
+#ingredients-container-section .ingredients-content img
+{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.6);
+}
+
+#ingredients-container-section .ingredients-content p
+{
+    width: 35%;
+    font-family: var(--primary-font);
+    color: var(--black-color);
+    font-size: 1rem;
+    position: relative;
+    top: -400px;
+}
+
+#ingredients-container-section .ingredients-content .dinamic-ingredient
+{
+    font-family: var(--primary-font);
+    color: var(--black-color);
+    font-size: 2.8rem;
+    position: relative;
+    top: -250px;
+    transform: rotate(-90deg);
+    letter-spacing: 15px;
+}
+
+#ingredients-container-section .ingredients-content .container-third-img
+{
+    height: 82vh;
+}
+
+#ingredients-container-section .ingredients-content .container-third-img p
+{
+    width: 75%;
+    color: var(--black-color);
+    font-size: 1.9rem;
+    line-height: 45px;
+    top: -550px;
+}
+
+#ingredients-container-section .ingredients-content .container-four-img
+{
+    overflow: hidden;
+    padding: 0;
+    margin-bottom: 0;
+    box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.6);
+}
+
+#ingredients-container-section .ingredients-content .container-four-img video
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.32);
+    filter: brightness(70%);
+}
+
+#ingredients-container-section .ingredients-content .container-four-img p
+{
+    width: 90%;
+    margin: 0 auto;
+    color: var(--white-color);
+    font-family: var(--secondary-font);
+    font-size: 1.9rem;
+    font-weight: 600;
+    line-height: 55px;
+    position: relative;
+    top: -345px;  
+}
+
+#ingredients-container-section .ingredients-content .container-five-img
+{
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+}
+
+#ingredients-container-section .ingredients-content .container-five-img p
+{
+    width: 90%;
+    text-align: center;
+    color: var(--white-color);
+    font-family: var(--primary-font);
+    font-size: 1.2rem;
+    line-height: 28px;
+    position: relative;
+    top: -527px; 
+}
+/*CONTENT DESING*/
+/*INGREDIENTS DESING*/
+
+
+/*CHEFS DESING*/
+
+/*BANNER TOP CHEFS*/
+#our-chefs
+{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#our-chefs .top-banner-chefs
+{   
+    width: 100%;
+    position: relative;
+    top: -230px;
+}
+
+#our-chefs .top-banner-chefs .chefs-text-container
+{
+    width: 90%;
+    font-family: var(--secondary-font);
+    position: relative;
+    top: 535px;
+    margin: 0 auto;
+    z-index: 3;
+}
+
+#our-chefs .top-banner-chefs .chefs-text-container h1
+{
+    color: var(--white-color);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+#our-chefs .top-banner-chefs .chefs-text-container p
+{
+    color: var(--white-color);
+    font-size: 1.2rem;
+}
+
+#our-chefs .top-banner-chefs .img-container
+{
+    width: 100%;
+    height: 120vh;
+}
+
+#our-chefs .top-banner-chefs .img-container video
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+/*BANNER TOP CHEFS*/
+
+
+/*OUR CHEFS INFO*/
+#our-famous-chefs .title-famous-chef
+{
+    background-image: url('../images/img/img-21.png');
+    object-fit: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#our-famous-chefs .title-famous-chef h2
+{
+    color: var(--white-color);
+    font-size: 2rem;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    margin: 0 auto;
+}
+
+#our-famous-chefs .container-famous-chefs .chef-img
+{
+    width: 100%;
+}
+
+#our-famous-chefs .container-famous-chefs .chef-img img
+{
+    width: 100%;
+}
+
+#our-famous-chefs .container-famous-chefs .chef-info
+{
+    width: 100%;
+}
+
+#our-famous-chefs .container-famous-chefs .chef-info h3,
+#our-famous-chefs .container-famous-chefs .chef-info p
+{
+    color: var(--secondary-color);
+    font-family: var(--secondary-font);
+    margin: 0 auto;
+}
+
+#our-famous-chefs .container-famous-chefs .chef-info h3
+{
+    width: 90%;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+#our-famous-chefs .container-famous-chefs .chef-info p
+{
+    width: 75%;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+/*OUR CHEFS INFO*/
+
+/*AWARDS INFO*/
+#awards .container-awards
+{
+    width: 100%;
+}
+
+#awards .container-awards .title-award-container
+{
+    height: 100vh;
+    background-color: #A82c48;
+    padding: 0;
+    overflow: hidden;
+}
+
+#awards .container-awards .title-award-container .award-img
+{
+    width: 100%;
+    height: 120vh;
+    position: relative;
+    top: -160px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    object-fit: cover;
+    filter: brightness(50%);
+    overflow: hidden;
+}
+
+#awards .container-awards .title-award-container h2
+{
+    position: relative;
+    top: 150px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 50px;
+    color: var(--white-color);
+    z-index: 2;
+}
+
+#awards .container-awards .title-award-container p
+{
+    position: relative;
+    top: -670px;
+    font-size: 1.8rem;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    line-height: 35px;
+    color: var(--white-color);
+    width: 80%;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+#awards .container-awards .icons-award-container
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/img/img-21.png');
+    object-fit: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#awards .container-awards .icons-award-container .reward-icon
+{
+    width: 230px;
+    height: 230px;
+}
+
+#awards .container-awards .icons-award-container .reward-icon:nth-child(1)
+{
+    filter: brightness(150%);
+}
+
+/*AWARDS INFO*/
+/*CHEF DESING*/
+
+/*ORDER CONFIRMATION DATA DESING*/
+.container-order-confirmation 
+{
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-order-confirmation form
+{
+    width: 100%;
+}
+
+.container-order-confirmation img 
+{
+    width: 130px;
+    margin-bottom: 20px;
+}
+
+.container-order-confirmation h2 
+{
+    font-family: var(--secondary-font);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.container-order-confirmation input[type="text"],
+.container-order-confirmation input[type="number"],
+.container-order-confirmation textarea 
+{
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 15px;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+}
+
+.container-order-confirmation button 
+{
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: var(--secondary-font);
+    transition: 0.3s all ease-in-out;
+}
+
+.container-order-confirmation button:hover 
+{
+    background-color: var(--secondary-color);
+}
+
+.container-order-confirmation button:focus 
+{
+    outline: none;
+}
+/*ORDER CONFIRMATION DATA DESING*/
+
+/*TRANSLATE BUTTON DESING*/
+#google_translate_element
+{
+    position: fixed;
+    bottom: 85px;
+    left: 20px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 5px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#google_translate_element .skiptranslate span
+{
+    display: none;
+}
+/*TRANSLATE BUTTON DESING*/
+
+/*ALERT FORM*/
+#alertForm .modal-footer button
+{
+    background: var(--primary-color);
+    color: var(--white-color);
+    font-family: var(--secondary-font);
+    font-weight: 600;
+}
+
+@media screen and (min-width: 767px)
+{
+    /*ORDER NOW PAGE STYLES*/
+
+    /*BANNER TOP*/
+    #orderNowTopBanner .img-container
+    {
+        top: -255px;
+    }
+
+    #orderNowTopBanner .top-banner-order .order-text-container
+    {
+        top: 160px;
+    }
+    /*BANNER TOP*/
+
+    /* Tamaño del modal del carrito*/
+    #modalCarrito .modal-xl 
+    {
+        --bs-modal-width: 730px;
+    }
+    /* Tamaño del modal */
+
+    /* Tamaño del modal de la informacion*/
+    #modalInfo .modal-xl 
+    {
+        --bs-modal-width: 730px;
+    }
+    /* Tamaño del modal de la informacion*/
+
+    /* Tamaño de los h3 en pantallas pequeñas */
+    #modalInfo .modal-body .card-body h3 
+    {
+        font-size: 1.3rem;
+    }
+    /* Tamaño de los h3 en pantallas pequeñas */
+
+    /* Tamaño de los h3 en pantallas pequeñas */
+    #modalInfo .modal-body .card-body p 
+    {
+
+        font-size: 1.1rem;
+    }
+    /* Tamaño de los h3 en pantallas pequeñas */
+
+    /*ORDER NOW PAGE STYLES*/
+
+
+    /*INGREDIENTS PAGE DESING*/
+
+    /*CONTENT DESING*/
+    #ingredients-container-section .ingredients-content p
+    {
+        width: 30%;
+        font-size: 1.7rem;
+        top: -410px;
+        line-height: 35px;
+    }
+
+    #ingredients-container-section .ingredients-content .container-third-img p 
+    {
+        width: 76%;
+        font-size: 2.2rem;
+        top: -440px;
+    }
+
+    #ingredients-container-section .ingredients-content .container-five-img p 
+    {
+        font-size: 1.5rem;
+        line-height: 40px;
+        top: -504px;
+    }
+    /*CONTENT DESING*/
+    /*INGREDIENTS PAGE DESING*/
+
+}
+
+@media (min-width: 991px)
+{
+    /*ORDER NOW PAGE STYLES*/
+
+    /*PRODUCTS CARDS*/
+    #productsContainer .card a
+    {
+        width: 87%;
+    }
+    /*PRODUCTS CARDS*/
+
+    /* Tamaño del modal del carrito*/
+    #modalCarrito .modal-xl 
+    {
+        --bs-modal-width: 800px;
+    } 
+    /* Tamaño del modal del carrito*/
+    
+    /* Icono del modal que aprece en pantalals medianas, grandes en el modal del carrito*/
+    .cart-icon-container
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60%;
+    }
+    /* Icono del modal que aprece en pantalals medianas, grandes en el modal del carrito*/
+
+    /* Tamaño del modal */
+    #modalInfo .modal-xl 
+
+    {
+        --bs-modal-width: 800px;
+    }
+    /* Tamaño del modal */
+
+    /* Centrado de los elementos del contenedor */
+    #modalFoodInfo .modal-body .card-body .sub-container 
+    {
+        margin-top: -1.8rem;
+    }
+    /* Centrado de los elementos del contenedor */
+
+    /* Tamaño de los h3  */
+    #modalInfo .modal-body .card-body h3 
+    {
+
+        font-size: 1.1rem;
+    }
+    /* Tamaño de los  */
+
+    /* Tamaño de los p */
+    #modalInfo .modal-body .card-body p 
+    {
+
+        font-size: 1.1rem;
+    }
+    /* Tamaño de los p */
+    /*ORDER NOW PAGE STYLES*/
+
+
+    /*INGREDIENTS PAGE DESING*/
+
+    /*CONTENT DESING*/
+    #banner-image-top .banner-text-ingredients-container
+    {
+        width: 50%;
+        top: -440px;
+        left: 46px;
+    }
+    
+    #banner-image-top .banner-text-ingredients-container h2 
+    {
+        font-size: 2.9rem;
+    }
+
+    #banner-image-top .banner-text-ingredients-container p
+    {
+        font-size: 1.3rem;
+    }
+
+    #ingredients-container-section .ingredients-content .container-first-img p
+    {
+        width: 35%;
+        font-size: 1.75rem;
+        top: -500px;
+    }
+
+    #ingredients-container-section .ingredients-content .container-third-img p 
+    {
+        width: 90%;
+        font-size: 2.5rem;
+        top: -525px;
+    }
+
+    #ingredients-container-section .ingredients-content .container-five-img p 
+    {
+        font-size: 1.7rem;
+        top: -595px;
+    }
+
+    #ingredients-container-section .ingredients-content .container-first-img,
+    #ingredients-container-section .ingredients-content .container-second-img,
+    #ingredients-container-section .ingredients-content .container-five-img
+    {
+        height: 100vh;
+    }
+
+    #ingredients-container-section .ingredients-content .container-third-img,
+    #ingredients-container-section .ingredients-content .container-four-img
+    {
+        height: 55vh;
+        border-radius: 15px;
+    }
+    
+    #ingredients-container-section .ingredients-content .container-third-img
+    {
+        overflow: hidden;
+    }
+
+    #ingredients-container-section .ingredients-content .container-third-img img
+    {
+        width: 120%;
+    }
+
+    #ingredients-container-section .ingredients-content .container-third-img p
+    {
+        width: 45%;
+        font-size: 2rem;
+        line-height: 40px;
+        left: 20px;
+        top: -355px;
+    }
+
+    #ingredients-container-section .ingredients-content .row:nth-child(2)
+    {
+        padding-left: calc(var(--bs-gutter-x) * .5);
+    }
+
+    #ingredients-container-section .ingredients-content .container-four-img p
+    {
+        top: -255px;
+    }
+
+    #ingredients-container-section .ingredients-content .container-five-img p
+    {
+        width: 95%;
+    }
+    /*CONTENT DESING*/
+    /*INGREDIENTS PAGE DESING*/
+
+
+    /*CHEFS DESING*/
+    /*OUR CHEFS INFO*/
+    #our-chefs .top-banner-chefs .chefs-text-container h1
+    {
+        font-size: 3rem;
+    }
+
+    #our-chefs .top-banner-chefs .chefs-text-container p
+    {
+        font-size: 1.6rem;
+    }
+
+    #our-famous-chefs .title-famous-chef h2
+    {
+        font-size: 2.5rem;
+    }
+
+    #our-famous-chefs .container-famous-chefs .chef-info h3
+    {
+        font-size: 2.8rem;
+    }
+
+    #our-famous-chefs .container-famous-chefs .chef-info p
+    {
+        width: 60%;
+        line-height: 40px;
+        font-size: 1.8rem;
+    }
+    /*OUR CHEFS INFO*/
+
+
+    /*AWARDS INFO*/
+    #awards .container-awards .title-award-container h2
+    {
+        font-size: 2.8rem;
+        top: 200px;
+    }
+
+    #awards .container-awards .title-award-container p
+    {
+        font-size: 2rem;
+    }
+
+    #awards .container-awards .title-award-container p
+    {
+        top: -600px;
+    }
+    /*AWARDS INFO*/
+    /*CHEFS DESING*/
+}
+
+@media (min-width: 1024px)
+{
+    /*ORDER NOW PAGE STYLES*/
+    
+    /*PRODUCTS CARDS*/
+    #productsContainer .card a
+    {
+        width: 70%;
+    }
+    /*PRODUCTS CARDS*/
+
+    /* Tamaño del modal del carrito*/
+    #modalCarrito .modal-xl 
+    {
+        --bs-modal-width: 950px;
+    }
+    /* Tamaño del modal del carrito*/ 
+
+    /* Tamaño del modal */
+    #modalInfo .modal-xl 
+    {
+        --bs-modal-width: 1050px;
+    }
+    /* Tamaño del modal */
+
+    /* Tamaño de los h3 */
+    #modalInfo .modal-body .card-body h3 
+    {
+        font-size: 1.4rem;
+    }
+    /* Tamaño de los h3 */
+
+
+    /* Tamaño de los p */
+    #modalInfo .modal-body .card-body p 
+    {
+        font-size: 1.2rem;
+    }
+    /* Tamaño de los p */
+
+    /*INGREDIENTS PAGE DESING*/
+
+    /*CONTENT DESING*/
+    #banner-image-top .banner-text-ingredients-container
+    {
+        width: 50%;
+        top: -440px;
+        left: 46px;
+    }
+
+    #ingredients-container-section .ingredients-content .container-first-img p
+    {
+        top: -505px;
+    }
+
+    #ingredients-container-section .ingredients-content .container-third-img,
+    #ingredients-container-section .ingredients-content .container-four-img
+    {
+        height: 60vh;
+    }
+
+    #ingredients-container-section .ingredients-content .container-four-img p
+    {
+        top: -260px;
+    }
+    /*CONTENT DESING*/
+    /*INGREDIENTS PAGE DESING*/
+
+
+    /*CHEFS DESING*/
+
+    /*OUR CHEFS INFO*/
+    #our-famous-chefs .container-famous-chefs .chef-img
+    {
+        width: 50%;
+    }
+
+    #our-famous-chefs .container-famous-chefs .chef-info
+    {
+        width: 50%;
+        padding-top: 100px;
+    }
+    /*OUR CHEFS INFO*/
+
+    /*AWARDS INFO*/
+    #awards .container-awards .icons-award-container
+    {
+        flex-direction: row;
+        height: inherit;
+    }
+
+    #awards .container-awards .title-award-container h2
+    {
+        top: 390px;
+    }
+
+    #awards .container-awards .title-award-container p
+    {
+        top: -700px;
+    }
+    /*AWARDS INFO*/
+
+    /*CHEFS DESING*/
+}
+
+@media (min-width: 1200px)
+{
+    /*ORDER NOW PAGE STYLES*/
+    /*VIDEO TOP CONTAINER*/
+    #orderNowTopBanner .img-container
+    {
+        top: -54px;
+        max-width: 70%;
+        height: 592px;
+        border-radius: 15px;
+        filter: brightness(100%);
+    }
+    /*VIDEO TOP CONTAINER*/
+
+    /*ORDER NOW PAGE STYLES*/
+    #orderNowTopBanner .top-banner-order 
+    {
+        top: -166px;
+    }
+
+    #orderNowTopBanner .top-banner-order .order-text-container
+    {
+        top: -44px;
+    }
+
+    #orderNowBottomBanner p img
+    {
+        left: 3%;
+    }
+
+    /* Tamaño del modal del carrito*/
+    #modalCarrito .modal-xl 
+    {
+        --bs-modal-width: 1100px;
+    }
+    /* Tamaño del modal del carrito*/
+
+    /*ORDER NOW PAGE STYLES*/
+
+
+    /*INGREDIENTS PAGE DESING*/
+    /*CONTENT DESING*/
+
+    #ingredients-container-section .ingredients-content .container-first-img p 
+    {
+        top: -570px;
+    }
+
+    #ingredients-container-section .ingredients-content .container-four-img p 
+    {
+        top: -305px;
+    }
+
+    #ingredients-container-section .ingredients-content .container-five-img p 
+    {
+        top: -710px;
+    }
+    /*CONTENT DESING*/
+    /*INGREDIENTS PAGE DESING*/
+
+}
+
+@media (min-width: 1440px)
+{
+    /*ORDER NOW DESING*/
+    /* Tamaño del modal del carrito*/
+    #modalCarrito .modal-xl {
+        --bs-modal-width: 1300px;
+    }
+    /* Tamaño del modal del carrito*/ 
+    /*ORDER NOW DESING*/
+
+    /*INGREDIENTS PAGE DESING*/
+    /*CONTENT DESING*/
+    #banner-image-top .banner-text-ingredients-container 
+    {
+        top: -570px;
+    }
+
+    #banner-image-top .banner-text-ingredients-container h2 
+    {
+        font-size: 4.9rem;
+    }
+
+    #banner-image-top .banner-text-ingredients-container p 
+    {
+        font-size: 1.5rem;
+    }
+
+    #ingredients-container-section .ingredients-content .container-first-img p 
+    {   
+        font-size: 2rem;
+        top: -540px;
+        line-height: 40px;
+    }
+
+    #ingredients-container-section .ingredients-content .container-four-img p 
+    {
+        font-size: 2.5rem;
+        top: -290px;
+    }
+
+    #ingredients-container-section .ingredients-content .container-third-img p 
+    {
+        width: 40%;
+        font-size: 2.3rem;
+        line-height: 45px;
+        top: -400px;
+    }
+
+    #ingredients-container-section .ingredients-content .container-five-img p 
+    {
+        font-size: 2.4rem;
+        top: -660px;
+    }
+
+    #ingredients-container-section .ingredients-content .dinamic-ingredient 
+    {
+        font-size: 4.5rem;
+        top: -170px;
+    }
+
+    /*INGREDIENTS PAGE DESING*/
+    /*CONTENT DESING*/
+
+
+    
+    /*CHEFS DESING*/
+
+    /*OUR CHEFS INFO*/
+    #our-famous-chefs .container-famous-chefs .chef-img img
+    {
+        height: 100vh;
+    }
+
+    #our-chefs .top-banner-chefs .chefs-text-container
+    {
+        top: 700px;
+    }
+
+    #our-chefs .top-banner-chefs .chefs-text-container h1
+    {
+        font-size: 4rem;
+    }
+
+    #our-chefs .top-banner-chefs .chefs-text-container p
+    {
+        font-size: 1.8rem;
+    }
+
+    #our-famous-chefs .title-famous-chef h2
+    {
+        font-size: 3rem;
+    }
+
+    #our-famous-chefs .container-famous-chefs .chef-info h3
+    {
+        font-size: 3rem;
+    }
+
+    #our-famous-chefs .container-famous-chefs .chef-info p
+    {
+        font-size: 2rem;
+    }
+    /*OUR CHEFS INFO*/
+
+    /*AWARDS INFO*/
+    #awards .container-awards .title-award-container h2
+    {
+        font-size: 3.5rem;
+    }
+
+    #awards .container-awards .title-award-container p
+    {
+        width: 70%;
+        font-size: 2.5rem;
+        top: -700px;
+    }
+    /*AWARDS INFO*/
+    /*CHEFS DESING*/
+}
+
